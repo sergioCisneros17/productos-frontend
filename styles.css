@@ -1,0 +1,69 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+header {
+  background: #1e40af;
+  color: #fff;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+header h1 { margin: 0; }
+.sub { margin: .4rem 0 0; opacity: .85; font-size: .9rem; }
+
+main { max-width: 960px; margin: 1.5rem auto; padding: 0 1rem; display: grid; gap: 1rem; }
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.25rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,.08);
+}
+.card h2 { margin-top: 0; font-size: 1.15rem; }
+
+#form-producto { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: .75rem; align-items: end; }
+label { display: flex; flex-direction: column; font-size: .85rem; gap: .25rem; font-weight: 600; }
+
+input {
+  padding: .55rem .7rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+input:focus { outline: 2px solid #3b82f6; border-color: transparent; }
+
+.fila { display: flex; gap: .5rem; margin-bottom: .6rem; flex-wrap: wrap; }
+.fila input { flex: 1; min-width: 180px; }
+.acciones { display: flex; gap: .5rem; }
+
+button {
+  padding: .55rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: #fff;
+  font-size: .95rem;
+  cursor: pointer;
+}
+button:hover { background: #1d4ed8; }
+button.secundario { background: #64748b; }
+button.secundario:hover { background: #475569; }
+button.peligro { background: #dc2626; }
+button.peligro:hover { background: #b91c1c; }
+button.chico { padding: .3rem .6rem; font-size: .85rem; }
+
+#mensaje { padding: .8rem 1rem; border-radius: 8px; font-weight: 500; }
+#mensaje.ok { background: #dcfce7; color: #166534; }
+#mensaje.error { background: #fee2e2; color: #991b1b; }
+
+.tabla-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: .6rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
+th { background: #f8fafc; font-size: .85rem; text-transform: uppercase; color: #475569; }
+td .acciones { gap: .35rem; }
+.vacio { text-align: center; color: #64748b; }
